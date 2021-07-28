@@ -10,7 +10,6 @@ object KafkaConsumerDemo {
     val prop = new Properties
     prop.put("bootstrap.servers", "localhost:9092")
     prop.put("group.id", "group01")
-    prop.put("auto.offset.reset", "earliest")
     prop.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
     prop.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
     prop.put("enable.auto.commit", "true")

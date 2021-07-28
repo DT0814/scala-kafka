@@ -8,7 +8,6 @@ object KafkaProducerDemo {
   def main(args: Array[String]): Unit = {
     val prop = new Properties
     prop.put("bootstrap.servers", "localhost:9092")
-    prop.put("acks", "all")
     prop.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
     prop.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
 
